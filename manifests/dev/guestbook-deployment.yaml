@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: guestbook-ui-dev
-  namespace: guestbook-dev
+  name: waves-dev
+  namespace: waves-dev
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: guestbook-ui-dev
+      app: waves-dev
   template:
     metadata:
       labels:
-        app: guestbook-ui-dev
+        app: waves-dev
     spec:
       containers:
-      - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
-        name: guestbook-ui
+      - image: gcr.io/heptio-images/ks-waves-demo:0.2
+        name: waves
         ports:
         - containerPort: 80
