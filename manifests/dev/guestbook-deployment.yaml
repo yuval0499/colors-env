@@ -4,8 +4,7 @@ metadata:
   name: guestbook-ui-dev
   namespace: guestbook-dev
 spec:
-  replicas: 2
-  revisionHistoryLimit: 3
+  replicas: 3
   selector:
     matchLabels:
       app: guestbook-ui-dev
